@@ -41,6 +41,9 @@ int main(int argc, char *argv[])
 
     center(3, "Test string!");
 
+    getyx(stdscr, lines, cols);
+    printw("The cursor was at position %d, %d ", lines, cols);
+
     refresh();
     getch();
 
